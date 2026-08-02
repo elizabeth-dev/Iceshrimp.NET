@@ -112,11 +112,12 @@ public sealed class ASTagConverter : JsonConverter
 
 		return tag?.Type switch
 		{
-			$"{Constants.ActivityStreamsNs}#Link"    => obj.ToObject<ASTagRel?>(),
+			$"{Constants.ActivityStreamsNs}#Link" => obj.ToObject<ASTagRel?>(),
 			$"{Constants.ActivityStreamsNs}#Mention" => obj.ToObject<ASMention?>(),
 			$"{Constants.ActivityStreamsNs}#Hashtag" => obj.ToObject<ASHashtag?>(),
-			$"{Constants.MastodonNs}#Emoji"          => obj.ToObject<ASEmoji?>(),
-			_                                        => null
+			$"{Constants.MastodonNs}#Emoji" => obj.ToObject<ASEmoji?>(),
+			$"_:Emoji" => obj.ToObject<ASEmoji?>(),
+			_ => null
 		};
 	}
 
