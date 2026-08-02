@@ -13,7 +13,7 @@ public static class Constants
 
 	// Leave this as-is, unless you've forked the project & want to reference your own website / repository (irrelevant for license compliance)
 	public const string ProjectHomepageUrl = "https://iceshrimp.dev/iceshrimp/Iceshrimp.NET";
-	
+
 	// Make sure to also update VersionHelpers.VersionIdentifier if you are building a fork
 
 	public const           string   ActivityStreamsNs = "https://www.w3.org/ns/activitystreams";
@@ -26,7 +26,7 @@ public static class Constants
 	public const           string   FedibirdNs        = "http://fedibird.com/ns";
 	public const           string   GoToSocialNs      = "https://gotosocial.org/ns";
 	public const           string   FepNs             = "https://w3id.org/fep";
-	public static readonly string[] SystemUsers       = ["instance.actor", "relay.actor"];
+	public static readonly string[] SystemUsers       = ["instance.actor2", "relay.actor"];
 
 	public const string APMime       = "application/activity+json";
 	public const string ASMime       = "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"";

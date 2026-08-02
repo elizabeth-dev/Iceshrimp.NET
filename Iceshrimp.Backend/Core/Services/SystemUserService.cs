@@ -18,7 +18,7 @@ public class SystemUserService(ILogger<SystemUserService> logger, DatabaseContex
 
 	public async Task<User> GetInstanceActorAsync()
 	{
-		return await GetOrCreateSystemUserAsync("instance.actor");
+		return await GetOrCreateSystemUserAsync("instance.actor2");
 	}
 
 	public async Task<User> GetRelayActorAsync()
@@ -28,7 +28,7 @@ public class SystemUserService(ILogger<SystemUserService> logger, DatabaseContex
 
 	public async Task<(User user, UserKeypair keypair)> GetInstanceActorWithKeypairAsync()
 	{
-		return await GetOrCreateSystemUserAndKeypairAsync("instance.actor");
+		return await GetOrCreateSystemUserAndKeypairAsync("instance.actor2");
 	}
 
 	public async Task<(User user, UserKeypair keypair)> GetRelayActorWithKeypairAsync()
